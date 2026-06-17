@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frequently asked questions about Banadir Medical Center services, appointments, and insurance.">
+  <title>FAQ | Banadir Medical Center</title>
+  <link rel="stylesheet" href="css/fonts/fonts-local.css">
+  <link rel="stylesheet" href="css/font-awesome/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230077B6' rx='20' width='100' height='100'/><text x='50' y='62' text-anchor='middle' fill='white' font-size='40' font-family='Arial' font-weight='bold'>BM</text></svg>">
+  <style>
+    .faq-accordion { max-width: 800px; margin: 0 auto; }
+    .faq-item { border: 1px solid var(--gray-100); border-radius: var(--radius-sm); margin-bottom: 12px; overflow: hidden; background: var(--white); }
+    .faq-question { padding: 18px 22px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; gap: 12px; transition: var(--transition-fast); }
+    .faq-question:hover { background: var(--gray-50); }
+    .faq-question h4 { font-size: 0.95rem; font-weight: 600; flex: 1; }
+    .faq-item.active .faq-question h4 { color: var(--primary); }
+    .faq-icon-wrap { width: 30px; height: 30px; border-radius: 8px; background: var(--gray-50); display: flex; align-items: center; justify-content: center; color: var(--gray-400); font-size: 0.75rem; transition: var(--transition); flex-shrink: 0; }
+    .faq-item.active .faq-icon-wrap { background: var(--primary); color: #fff; transform: rotate(180deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .faq-item.active .faq-answer { max-height: 300px; }
+    .faq-answer-inner { padding: 0 22px 18px; color: var(--gray-500); font-size: 0.9rem; line-height: 1.8; }
+  </style>
+</head>
+<body data-lang="en" class="inner-page">
+  <div class="loading-screen" id="loadingScreen"><div class="loader"><div class="loader-circle"></div><div class="loader-text"><span>Banadir Medical Center</span></div></div></div>
+  <div class="mobile-overlay"></div>
+
+  <nav class="navbar" id="navbar"><div class="container"><a href="index.html" class="logo"><i class="fas fa-heartbeat"></i><span>Banadir Medical Center</span></a><button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button><ul class="nav-menu" id="navMenu"><li><a href="index.html"><span lang="en">Home</span><span lang="so">Guriga</span></a></li><li><a href="about.html"><span lang="en">About</span><span lang="so">Nagu Saabsan</span></a></li><li><a href="services.html"><span lang="en">Services</span><span lang="so">Adeegyada</span></a></li><li><a href="doctors.html"><span lang="en">Doctors</span><span lang="so">Dhaqiatiirta</span></a></li><li><a href="appointment.html"><span lang="en">Appointment</span><span lang="so">Ballanta</span></a></li><li><a href="blog.html"><span lang="en">Blog</span><span lang="so">Blog</span></a></li><li><a href="contact.html"><span lang="en">Contact</span><span lang="so">Nala Soo Xiriir</span></a></li><li><a href="faq.html" class="active-page"><span lang="en">FAQ</span><span lang="so">Su'aalaha</span></a></li></ul><div class="nav-actions"><button class="lang-switch" id="langSwitch"><i class="fas fa-globe"></i><span>EN</span></button><button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button><a href="appointment.html" class="btn btn-primary nav-btn"><span lang="en">Book Now</span><span lang="so">Hadda Ballansho</span></a></div></div></nav>
+
+  <section class="page-hero"><div class="container"><h1><span lang="en">Frequently Asked Questions</span><span lang="so">Su'aalaha Badanaa La Weydiyo</span></h1><p><span lang="en">Find answers to common questions about our services, appointments, and insurance.</span><span lang="so">Hel jawaabaha su'aalaha caadiga ah ee ku saabsan adeegyadeena.</span></p><div class="breadcrumb"><a href="index.html"><span lang="en">Home</span><span lang="so">Guriga</span></a> <span>/</span> <span lang="en">FAQ</span><span lang="so">Su'aalaha</span></div></div></section>
+
+  <section class="section-padding"><div class="container"><div class="faq-accordion">
+    <div class="faq-item active"><div class="faq-question"><h4><span lang="en">What are the hospital visiting hours?</span><span lang="so">Waa maxay saacadaha booqashada?</span></h4><div class="faq-icon-wrap"><i class="fas fa-chevron-down"></i></div></div><div class="faq-answer"><div class="faq-answer-inner"><span lang="en">Visiting hours are from 8:00 AM to 8:00 PM daily. For ICU and special wards, please contact the nursing station for specific visiting times.</span><span lang="so">Saacadaha booqashada waa 8:00 AM ilaa 8:00 PM maalin kasta. ICU iyo wardyada gaar ah, fadlan la xiriir xarunta nurse-ka.</span></div></div></div>
+
+    <div class="faq-item"><div class="faq-question"><h4><span lang="en">Do I need an appointment?</span><span lang="so">Ma u baahanahay ballansho?</span></h4><div class="faq-icon-wrap"><i class="fas fa-chevron-down"></i></div></div><div class="faq-answer"><div class="faq-answer-inner"><span lang="en">While walk-ins are accepted for emergencies, we recommend booking an appointment to avoid waiting times and ensure personalized care from your preferred doctor.</span><span lang="so">Inkastoo degdegaha la aqbalayo, waxaan ku talineynaa inaad ballansho sameyso si aad uga fogaato waqtiga sugitaanka.</span></div></div></div>
+
+    <div class="faq-item"><div class="faq-question"><h4><span lang="en">What insurance plans do you accept?</span><span lang="so">Waa maxay caymiska aad aqbasho?</span></h4><div class="faq-icon-wrap"><i class="fas fa-chevron-down"></i></div></div><div class="faq-answer"><div class="faq-answer-inner"><span lang="en">We accept most major insurance plans including Takaful, Amal, and various international providers. Please contact our billing department for specific coverage information.</span><span lang="so">Waxaan aqbalnaa qorshayaasha caymiska ee ugu waaweyn oo ay ku jiraan Takaful, Amal, iyo kuwa caalamiga ah. Fadlan la xiriir qaybta lacag-bixinta.</span></div></div></div>
+
+    <div class="faq-item"><div class="faq-question"><h4><span lang="en">How can I get my medical records?</span><span lang="so">Sideen ku heli karaa diiwaanadayda?</span></h4><div class="faq-icon-wrap"><i class="fas fa-chevron-down"></i></div></div><div class="faq-answer"><div class="faq-answer-inner"><span lang="en">You can request your medical records by visiting our medical records department with a valid ID. Processing takes 2-3 business days. You can also request records online.</span><span lang="so">Waxaad dalban kartaa diiwaanada adiga oo booqanaya qaybta diiwaanada oo leh aqoonsi. Dhamaystirku waa 2-3 maalmood shaqo.</span></div></div></div>
+
+    <div class="faq-item"><div class="faq-question"><h4><span lang="en">Is there a pharmacy in the hospital?</span><span lang="so">Ma farmasi baa ku jirta isbitaalka?</span></h4><div class="faq-icon-wrap"><i class="fas fa-chevron-down"></i></div></div><div class="faq-answer"><div class="faq-answer-inner"><span lang="en">Yes, we have a fully stocked pharmacy on the ground floor that operates 24/7. Our pharmacists can help you understand your medications.</span><span lang="so">Haa, waxaan leenahay farmasi buuxa oo ku taal dhulka hoose oo shaqeysa 24/7.</span></div></div></div>
+
+    <div class="faq-item"><div class="faq-question"><h4><span lang="en">What languages do your doctors speak?</span><span lang="so">Luqado sideed buu ku hadlaa dhakhtarku?</span></h4><div class="faq-icon-wrap"><i class="fas fa-chevron-down"></i></div></div><div class="faq-answer"><div class="faq-answer-inner"><span lang="en">Our doctors speak Somali, Arabic, English, and some speak Italian and Turkish. Interpreter services are also available upon request.</span><span lang="so">Dhakhaatiiradayadu waxay ku hadlaan Soomaali, Carabi, Ingiriisi, iyo qaar baa ku hadla Talyaani iyo Turkiga.</span></div></div></div>
+
+    <div class="faq-item"><div class="faq-question"><h4><span lang="en">Do you offer home visit services?</span><span lang="so">Ma bixisaan adeegyo booqasho guriga?</span></h4><div class="faq-icon-wrap"><i class="fas fa-chevron-down"></i></div></div><div class="faq-answer"><div class="faq-answer-inner"><span lang="en">Yes, we offer home visit services for patients who are unable to travel to the hospital. Please call our reception to schedule a home visit.</span><span lang="so">Haa, waxaan bixinaa adeegyo booqasho guriga bukaanada aan awoodin inay yimaadaan isbitaalka. Fadlan soo wac reception-ka.</span></div></div></div>
+  </div></div></section>
+
+  <section class="emergency-banner"><div class="container"><div class="emergency-content"><div class="emergency-icon"><i class="fas fa-phone-alt"></i></div><div class="emergency-text"><h2><span lang="en">Still Have Questions?</span><span lang="so">Weli Su'aalaa Leedahay?</span></h2><p><span lang="en">Contact us directly and we'll be happy to help.</span><span lang="so">Nala soo xiriir waxaanan ku caawin doonaa farxad.</span></p></div><div class="emergency-action"><a href="contact.html" class="btn btn-emergency"><i class="fas fa-envelope"></i> <span lang="en">Contact Us</span><span lang="so">Nala Xiriir</span></a></div></div></div></section>
+
+  <footer class="footer"><div class="footer-top"><div class="container"><div class="footer-grid"><div class="footer-col"><a href="index.html" class="footer-logo"><i class="fas fa-heartbeat"></i><span>Banadir Medical Center</span></a><p><span lang="en">Quality healthcare since 1999.</span><span lang="so">Caafimaad tayo leh tan iyo 1999.</span></p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div><div class="footer-col"><h4><span lang="en">Quick Links</span><span lang="so">Xidhiidhyo</span></h4><ul class="footer-links"><li><a href="index.html"><span lang="en">Home</span><span lang="so">Guriga</span></a></li><li><a href="about.html"><span lang="en">About</span><span lang="so">Nagu Saabsan</span></a></li><li><a href="services.html"><span lang="en">Services</span><span lang="so">Adeegyada</span></a></li><li><a href="doctors.html"><span lang="en">Doctors</span><span lang="so">Dhaqiatiirta</span></a></li><li><a href="appointment.html"><span lang="en">Appointment</span><span lang="so">Ballanta</span></a></li></ul></div><div class="footer-col"><h4><span lang="en">Services</span><span lang="so">Adeegyada</span></h4><ul class="footer-links"><li><a href="services.html"><span lang="en">Cardiology</span><span lang="so">Wadnaha</span></a></li><li><a href="services.html"><span lang="en">Neurology</span><span lang="so">Maskaxda</span></a></li><li><a href="services.html"><span lang="en">Orthopedics</span><span lang="so">Lafiga</span></a></li><li><a href="services.html"><span lang="en">Pediatrics</span><span lang="so">Carruurta</span></a></li></ul></div><div class="footer-col"><h4><span lang="en">Contact</span><span lang="so">Xidhiidh</span></h4><ul class="footer-contact"><li><i class="fas fa-map-marker-alt"></i><span>Mogadishu, Somalia</span></li><li><i class="fas fa-phone-alt"></i><span>+252 61 555 1234</span></li><li><i class="fas fa-envelope"></i><span>info@banadirmedical.com</span></li><li><i class="fas fa-clock"></i><span><span lang="en">24/7 Emergency</span><span lang="so">Degdeg 24/7</span></span></li></ul></div></div></div></div><div class="footer-bottom"><div class="container"><p>&copy; 2026 Banadir Medical Center. <span lang="en">All rights reserved.</span><span lang="so">Dhammaan xuquuqudu waa la leeyahay.</span></p></div></div></footer>
+
+  <a href="https://wa.me/252615551234" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+  <script src="js/script.js"></script>
+  <script>
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const wasActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+        if (!wasActive) item.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
